@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyPets</string>
+    <string name="ver_lista">Ver Lista</string>
+    <string-array name="unidad">
+        <item>Otro</item>
+        <item>Bolsa 1Kg</item>
+        <item>Bolsa 3Kg</item>
+        <item>Saco 7.5 Kg.</item>
+        <item>Saco 15 Kg.</item>
+        <item>Saco 20K g.</item>
+    </string-array>
+</resources>

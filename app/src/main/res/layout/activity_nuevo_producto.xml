@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NuevoProductoActivity">
+
+    <ImageView
+        android:id="@+id/mypetsss"
+        android:layout_width="158dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/mypets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="325dp"
+        android:layout_height="84dp"
+        android:ems="20"
+        android:text="Ingrese un producto al carrito"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypetsss" />
+
+    <EditText
+        android:id="@+id/ingresarNombre"
+        android:layout_width="372dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="Nombre del producto"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ingresarCantidad"
+        android:layout_width="365dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresarNombre" />
+
+    <Spinner
+        android:id="@+id/ingresarUnidad"
+        android:layout_width="159dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/unidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresarCantidad" />
+
+    <EditText
+        android:id="@+id/otraUnidad"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Otra unidad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/botonIngresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingresarUnidad"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <Button
+        android:id="@+id/botonIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="ingresarProducto"
+        android:text="Ingresar Producto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otraUnidad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
